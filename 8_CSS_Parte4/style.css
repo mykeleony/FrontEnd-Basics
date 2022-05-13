@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    color: #222;
+    font-family: Helteica, Arial, sans-serif;
+    text-align: center;
+}
+
+#container {
+    position: relative;
+    background-color: #FFFFFF;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px; 
+}
+
+h1 {
+    margin: 0 0 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Styling links with Sudo Classes. ps: The properties order (link, visited, hover and active) matters */
+
+/* Unvisited link */
+a:link {
+    color: #F42AA6;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #F42AA6;
+}
+
+a:hover {
+    color: #A50578;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #000;
+}
+
+/* Specific link styles */
+
+#link-1:hover {
+    background: #333;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#link-3 {
+    background: #F42AA6;
+    color: white;
+    padding: 5px;
+}
+
+#link-3:hover {
+    background: #A50578;
+    text-decoration: none;
+}
+
+#link-4:hover {
+    color: #333;
+}
+
+/* CSS Floats */
+
+#floats {
+    background: #D41;
+}
+
+#floats #container {
+    background: white;
+    padding: 20px;
+}
+
+/* CSS Positioning */
+.box {
+    background-color: #DB4E4E;
+    color: #FFFFFF;
+    height: 150px;
+    width: 150px;
+    margin: 20px 0;
+}
+
+#relative-box {
+    position: relative; /* Works over the current position, not the actual screen size */
+    top: 30px;
+    left: -70px;
+}
+
+#absolute-box {
+    position: absolute;
+    top: 0; /* Fica a alguns pixels do topo porque é filho da tag <body> */
+    right: 0;
+}
